@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $usuarioAccion = $_SESSION['usuario'] ?? 'Invitado';
+    $datosPost = json_encode($_POST);
+
+    $logMsg = "[" . date("Y-m-d H:i:s") . "] - Usuario: $usuarioAccion - Página: " . basename($_SERVER['PHP_SELF']) . " - Datos: $datosPost\n";
+    file_put_contents('../log.txt', $logMsg, FILE_APPEND);
+}
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
