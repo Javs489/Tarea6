@@ -28,7 +28,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
                 <?php if ($_SESSION['usuario'] === 'Admin'): ?>
                     <li class="nav-item">
-                        <a class="nav-link text-warning font-weight-bold" href="/ver_log.php">Ver Log</a>
+                        <a class="nav-link text-warning font-weight-bold" href="/auth/ver_log.php">Ver Log</a>
                     </li>
                 <?php endif; ?>
             <?php endif; ?>
@@ -42,16 +42,16 @@ if (session_status() === PHP_SESSION_NONE) {
                     Usuario: <strong><?php echo htmlspecialchars($_SESSION['usuario']); ?></strong>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-info btn-sm mr-2 text-white" href="/cambiarContraseña.php">Cambiar Contraseña</a>
+                    <a class="nav-link btn btn-outline-info btn-sm mr-2 text-white" href="/auth/cambiarContraseña.php">Cambiar Contraseña</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-danger btn-sm text-white" href="/logout.php">Cerrar Sesión</a>
+                    <a class="nav-link btn btn-danger btn-sm text-white" href="/auth/logout.php">Cerrar Sesión</a>
                 </li>
             <?php else: ?>
 
                 <li class="nav-item navbar-text text-muted mr-3">Invitado</li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-success btn-sm text-white" href="/login.php">Login</a>
+                    <a class="nav-link btn btn-success btn-sm text-white" href="/auth/login.php">Login</a>
                 </li>
             <?php endif; ?>
         </ul>

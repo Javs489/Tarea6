@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $logMsg = "[" . date("Y-m-d H:i:s") . "] - Usuario: $usuarioInput - Acción: Login exitoso\n";
             file_put_contents('log.txt', $logMsg, FILE_APPEND);
 
-            header("Location: index.php");
+            header("Location: ../index.php");
             exit();
         } else {
             $error = "Usuario o contraseña incorrectos.";

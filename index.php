@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    require 'menu.php';
+    require 'includes/menu.php';
 
     echo "<h1>Bienvenido a la página principal</h1>";
     ?>

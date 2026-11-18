@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $datosPost = json_encode($_POST);
 
     $logMsg = "[" . date("Y-m-d H:i:s") . "] - Usuario: $usuarioAccion - Página: " . basename($_SERVER['PHP_SELF']) . " - Datos: $datosPost\n";
-    file_put_contents('../log.txt', $logMsg, FILE_APPEND);
+    file_put_contents('../auth/log.txt', $logMsg, FILE_APPEND);
 }
 ?>
 
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </head>
         <body class="container mt-4">
                 <?php
-                require '../menu.php';
+                require '../includes/menu.php';
                 require_once 'CalculadoraCientifica.php';
                 ?>
                 <br>
