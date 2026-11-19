@@ -9,4 +9,5 @@ En parejas hacer un fork para evolucionar el ejercicio de la tarea 5 para añadi
     Meter una página para cerrar sesión
     Meter una página para ver el log de operaciones solo si el usuario se llama Admin
 
-Entregar un enlace al repositorio de GitHub con la solución
+Hay un bug con el usuario administrador. Si entras como "admin" no se ven los logs, pero si entras como "Admin" si te dejará verlos.
+
