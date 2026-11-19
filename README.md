@@ -1,14 +1,11 @@
-# Metiendo-POO-Excepciones-y-Formularios
-Vamos a modificar el ejercicio de la tarea 2 para evolucionarlo.
+En parejas hacer un fork para evolucionar el ejercicio de la tarea 5 para añadirle:
 
-1. Haciendo una clase calculadora que se encargue de calcular la suma, la resta, la multiplicación y la división,
+    Una página de login que valide contra los datos de un fichero.
+    Que la sesión del servidor se persista
+    Que en todas las páginas se vea que usuario está logeado y dar la opción de cerrar sesión, o se ponga invitado y deje ir al login.
+    Añadir una página de cambio de contraseña
+    Meter un log en cada página que sirva para escribir lo que está haciendo el usuario, indicando qué usuario ha hecho la acción y cuales han sido los datos introducidos.
+    Meter una página para cerrar sesión
+    Meter una página para ver el log de operaciones solo si el usuario se llama Admin
 
-2. Vamos a crear una nueva página en la que tendremos la calculadora científica, donde vamos a extender la clase calculadora y vamos a añadir la potencia y la raíz
-
-3. Vamos a tener una página con un formulario que va a ser la encargada de pedirle al usuario introducir los números que van a salir en la calculadora
-
-4. Modificar el ejercicio de la edad para coger lo que introduzca el usuario.
-
-5. Modificar el ejercicio de imprimir los números ascendentes y descendentes para utilizar uno facilitado por el usuario.
-
-6. Vamos a poner control de excepciones para controlar las divisiones por cero y los posibles fallos que puedan surgir.
+Entregar un enlace al repositorio de GitHub con la solución
